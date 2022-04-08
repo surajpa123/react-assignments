@@ -4,11 +4,10 @@ import style from "../components/res.css"
 
 export const RestaurantShow = ()=>{
 const [data,setdata] = useState([])
-const [count,setcount] = useState(3)
+const [count,setcount] = useState(5)
 const [payments,setpayments] = useState("cash")
 React.useEffect(()=>{
     getData()
-    
 },[count,payments])
     const getData = ()=>{
     axios.get("http://localhost:8080/getres",{
@@ -16,13 +15,35 @@ React.useEffect(()=>{
             _page : 1,
             _limit: 5,
             ratings:count,
-            payment_methods:payments
         }
     }).then(function(res){
        setdata(res.data)
        console.log(data)
     })
     }
+
+  const handelPayment = ()=>{
+      let Alld = [...data];
+      Alld = Alld.filter((el)=>{
+          if(el.payment_methods == "cash"){
+              return el.payment_methods
+          }
+      })
+
+      setdata(Alld)
+      console.log(Alld)
+  }
+  const handelPayment2 = ()=>{
+    let Alld = [...data];
+    Alld = Alld.filter((el)=>{
+        if(el.payment_methods == "card"){
+            return el.payment_methods
+        }
+    })
+    setdata(Alld)
+    console.log(Alld)
+}
+
 
     const handelSortsecond = (value)=>{
          setcount(value)
@@ -59,12 +80,11 @@ const getall = ()=>{
 <button onClick={()=>handelSortsecond(3)}>3 Star</button>
 <button onClick={()=>handelSortsecond(4)}>4 Star</button>
 <button onClick={()=>handelSortsecond(5)}>5 Star</button>
-<button onClick={()=>setpayments("card")}>Card</button>
-<button onClick={()=>setpayments("cash")}>Cash</button>
+<button onClick={()=>{handelPayment()}}>Cash</button>
+<button onClick={()=>{handelPayment2()}}>Card</button>
 <button onClick={()=> getall()}>All</button>
 <button onClick={()=>handelSort()}>Asc</button>
 <button onClick={()=>handelSor2()}>Dsc</button>
-
    {data.map((el) => (
   <div>{el.id} 
   <img src={el.image} alt="" />
