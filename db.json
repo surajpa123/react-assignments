@@ -6,10 +6,7 @@
         "id": 1,
         "name": "Innovative",
         "costForTwo": "18669",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 5,
         "votes": "0729",
         "reviews": "73",
@@ -18,10 +15,7 @@
         "id": 2,
         "name": "modular",
         "costForTwo": "883",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 2,
         "votes": "2575",
         "reviews": "832",
@@ -30,10 +24,7 @@
         "id": 3,
         "name": "impactful",
         "costForTwo": "3",
-        "payment_methods": {
-            "card": true,
-            "cash": true
-          },
+        "payment_methods":"card",
         "ratings": 1,
         "votes": "60167",
         "reviews": "16444",
@@ -42,10 +33,7 @@
         "id": 4,
         "name": "model",
         "costForTwo": "16722",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 4,
         "votes": "7",
         "reviews": "63225",
@@ -54,10 +42,7 @@
         "id": 5,
         "name": "throughput",
         "costForTwo": "793",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 1,
         "votes": "487",
         "reviews": "23",
@@ -66,10 +51,7 @@
         "id": 6,
         "name": "content-based",
         "costForTwo": "6",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 2,
         "votes": "51037",
         "reviews": "9",
@@ -78,10 +60,7 @@
         "id": 7,
         "name": "conglomeration",
         "costForTwo": "48",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 4,
         "votes": "406",
         "reviews": "3",
@@ -90,10 +69,7 @@
         "id": 8,
         "name": "architecture",
         "costForTwo": "7177",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 5,
         "votes": "4",
         "reviews": "97940",
@@ -102,10 +78,7 @@
         "id": 9,
         "name": "architecture",
         "costForTwo": "35",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 2,
         "votes": "446",
         "reviews": "74896",
@@ -114,10 +87,7 @@
         "id": 10,
         "name": "4th generation",
         "costForTwo": "95",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 3,
         "votes": "960",
         "reviews": "83091",
@@ -126,10 +96,7 @@
         "id": 11,
         "name": "Re-engineered",
         "costForTwo": "228",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 4,
         "votes": "784",
         "reviews": "3",
@@ -138,10 +105,7 @@
         "id": 12,
         "name": "3rd generation",
         "costForTwo": "7",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 2,
         "votes": "5166",
         "reviews": "96262",
@@ -150,10 +114,7 @@
         "id": 13,
         "name": "Configurable",
         "costForTwo": "61386",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 2,
         "votes": "38",
         "reviews": "82587",
@@ -162,10 +123,7 @@
         "id": 14,
         "name": "Persevering",
         "costForTwo": "7",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"card",
         "ratings": 4,
         "votes": "45660",
         "reviews": "3162",
@@ -174,10 +132,7 @@
         "id": 15,
         "name": "budgetary management",
         "costForTwo": "509",
-        "payment_methods": {
-            "card": true,
-            "cash": false
-          },
+        "payment_methods":"cash",
         "ratings": 53,
         "votes": "65",
         "reviews": "4484",
