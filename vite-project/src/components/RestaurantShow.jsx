@@ -72,9 +72,9 @@ const getall = ()=>{
        setdata(res.data)
     })
 }
-
     return(
         <div className="main">
+            <div className="btn">
 <button onClick={()=>handelSortsecond(1)}>1 Star</button>
 <button onClick={()=>handelSortsecond(2)}>2 Star</button>
 <button onClick={()=>handelSortsecond(3)}>3 Star</button>
@@ -85,6 +85,7 @@ const getall = ()=>{
 <button onClick={()=> getall()}>All</button>
 <button onClick={()=>handelSort()}>Asc</button>
 <button onClick={()=>handelSor2()}>Dsc</button>
+</div>
    {data.map((el) => (
   <div>{el.id} 
   <img src={el.image} alt="" />

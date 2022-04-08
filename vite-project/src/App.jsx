@@ -10,7 +10,7 @@ function App() {
     <div className="App">
     <RestaurantShow/>
     
-    <h1>helo</h1>
+    
     </div>
   )
 }
