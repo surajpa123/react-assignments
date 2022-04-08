@@ -4,36 +4,55 @@ import style from "../components/res.css"
 
 export const RestaurantShow = ()=>{
 const [data,setdata] = useState([])
-const [filter,setFilter] = useState([])
+const [count,setcount] = useState(5)
 React.useEffect(()=>{
     getData()
-    // handelSort()
-    // handelSor2()
-},[])
+    
+},[count])
     const getData = ()=>{
-    axios.get("http://localhost:8080/getres").then(function(res){
-        
+    axios.get("http://localhost:8080/getres",{
+        params:{
+            _page : 1,
+            _limit: 5,
+            ratings:count,
+            // payment_methods:"card"
+            
+        }
+    }).then(function(res){
        setdata(res.data)
        console.log(data)
     })
     }
 
- const handelCard = ()=>{
-     const sortdata = [...data]
-     if(sortdata.payment_methods[card] == true){
-        setdata(sortdata)
-     }
- }
+    const handelSortsecond = (value)=>{
+         setcount(value)
+        //  count = 0
+         console.log(count)
+    }
+
+
+    
+
+    // React.useEffect(() => {
+    //     axios.get("http://localhost:8080/getres", {
+    //       params:{
+    //         _page : 1,
+    //         _limit: 5,
+    //         ratings:Ratings,
+    //         Payment:"card"
+    //       }
+    //     }).then(res => setData(res.data));
+    //        // console.log("new",data);
+    //        console.log("rate",ratings)
+    //    }, [])
+       
 
     const handelSort = ()=>{
         const sortdata = [...data]
        sortdata.sort(function(a,b){
-
            return a.ratings - b.ratings
-
        })
        setdata(sortdata)
-        console.log("sort",data[0].payment_methods)
     }
     const handelSor2 = ()=>{
         const sortdata = [...data]
@@ -45,21 +64,16 @@ React.useEffect(()=>{
 console.log("sort",data)
     }
 
-    const handelSort2 = ()=>{
-        const sortdata = [...data]
-     if(sortdata[0].payment_methods.card == true)
-        console.log("yes",data)
-    }
     return(
         <div className="main">
-{/* <button onClick={()=>handelSort1()}>1 Star</button>
-<button onClick={()=>handelSort2()}>2 Star</button>
-<button onClick={()=>handelSort()}>3 Star</button>
-<button onClick={()=>handelSort4()}>4 Star</button>
-<button onClick={()=>handelSort()}>5 Star</button>
-<button onClick={()=>handelCard()}>Card</button>
-<button>Cash</button>
-<button>All</button> */}
+<button onClick={()=>handelSortsecond(1)}>1 Star</button>
+<button onClick={()=>handelSortsecond(2)}>2 Star</button>
+<button onClick={()=>handelSortsecond(3)}>3 Star</button>
+<button onClick={()=>handelSortsecond(4)}>4 Star</button>
+<button onClick={()=>handelSortsecond(5)}>5 Star</button>
+{/* <button onClick={()=>handelCard()}>Card</button> */}
+{/* <button>Cash</button>
+<button>All</button>  */}
 <button onClick={()=>handelSort()}>Asc</button>
 <button onClick={()=>handelSor2()}>Dsc</button>
 
