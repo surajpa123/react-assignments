@@ -52,14 +52,14 @@ console.log("sort",data)
     }
     return(
         <div className="main">
-<button onClick={()=>handelSort1()}>1 Star</button>
+{/* <button onClick={()=>handelSort1()}>1 Star</button>
 <button onClick={()=>handelSort2()}>2 Star</button>
 <button onClick={()=>handelSort()}>3 Star</button>
 <button onClick={()=>handelSort4()}>4 Star</button>
 <button onClick={()=>handelSort()}>5 Star</button>
 <button onClick={()=>handelCard()}>Card</button>
 <button>Cash</button>
-<button>All</button>
+<button>All</button> */}
 <button onClick={()=>handelSort()}>Asc</button>
 <button onClick={()=>handelSor2()}>Dsc</button>
 
