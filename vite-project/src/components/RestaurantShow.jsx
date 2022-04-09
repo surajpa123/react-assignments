@@ -1,14 +1,14 @@
 import axios from "axios"
 import React, { useState } from "react"
 import style from "../components/res.css"
-
 export const RestaurantShow = ()=>{
 const [data,setdata] = useState([])
 const [count,setcount] = useState(5)
-const [payments,setpayments] = useState("cash")
+const [flag, setFlag] = useState([])
+
 React.useEffect(()=>{
     getData()
-},[count,payments])
+},[count])
     const getData = ()=>{
     axios.get("http://localhost:8080/getres",{
         params:{
@@ -19,31 +19,31 @@ React.useEffect(()=>{
     }).then(function(res){
        setdata(res.data)
        console.log(data)
+       setFlag(res.data)
     })
+    
     }
-
   const handelPayment = ()=>{
-      let Alld = [...data];
-      Alld = Alld.filter((el)=>{
-          if(el.payment_methods == "cash"){
-              return el.payment_methods
-          }
-      })
-
+      let Alld = [...flag];
+        Alld = Alld.filter((el)=>{
+            if(el.payment_methods == "cash"){
+                return el.payment_methods
+            }
+        })
       setdata(Alld)
       console.log(Alld)
+      console.log(flag)
   }
   const handelPayment2 = ()=>{
-    let Alld = [...data];
-    Alld = Alld.filter((el)=>{
-        if(el.payment_methods == "card"){
-            return el.payment_methods
-        }
-    })
+    let Alld = [...flag]
+        Alld = Alld.filter((el)=>{
+            if(el.payment_methods == "card"){
+                return el.payment_methods
+            }
+        })
     setdata(Alld)
     console.log(Alld)
 }
-
 
     const handelSortsecond = (value)=>{
          setcount(value)
@@ -102,9 +102,7 @@ const getall = ()=>{
   </div>
   
    ))}
-
-        </div>
-      
+</div>
     )
 
 

@@ -4,7 +4,7 @@
     [
       {
         "id": 1,
-        "name": "Innovative",
+        "name": "Taj hotel",
         "costForTwo": "18669",
         "payment_methods":"cash",
         "ratings": 5,
@@ -13,7 +13,7 @@
         "image": "http://dummyimage.com/175x100.png/cc0000/ffffff"
       }, {
         "id": 2,
-        "name": "modular",
+        "name": "Hotel junction",
         "costForTwo": "883",
         "payment_methods":"card",
         "ratings": 2,
@@ -22,7 +22,7 @@
         "image": "http://dummyimage.com/159x100.png/cc0000/ffffff"
       }, {
         "id": 3,
-        "name": "impactful",
+        "name": "Real taste",
         "costForTwo": "3",
         "payment_methods":"card",
         "ratings": 1,
@@ -31,7 +31,7 @@
         "image": "http://dummyimage.com/240x100.png/5fa2dd/ffffff"
       }, {
         "id": 4,
-        "name": "model",
+        "name": "Sai dhava",
         "costForTwo": "16722",
         "payment_methods":"cash",
         "ratings": 4,
@@ -40,7 +40,7 @@
         "image": "http://dummyimage.com/161x100.png/5fa2dd/ffffff"
       }, {
         "id": 5,
-        "name": "throughput",
+        "name": "Highway Treat",
         "costForTwo": "793",
         "payment_methods":"card",
         "ratings": 1,
@@ -49,7 +49,7 @@
         "image": "http://dummyimage.com/193x100.png/5fa2dd/ffffff"
       }, {
         "id": 6,
-        "name": "content-based",
+        "name": "Midway Treat",
         "costForTwo": "6",
         "payment_methods":"cash",
         "ratings": 2,
@@ -58,7 +58,7 @@
         "image": "http://dummyimage.com/172x100.png/cc0000/ffffff"
       }, {
         "id": 7,
-        "name": "conglomeration",
+        "name": "Hotel Punjab",
         "costForTwo": "48",
         "payment_methods":"card",
         "ratings": 4,
@@ -67,7 +67,7 @@
         "image": "http://dummyimage.com/202x100.png/cc0000/ffffff"
       }, {
         "id": 8,
-        "name": "architecture",
+        "name": "Punjabi Dhava",
         "costForTwo": "7177",
         "payment_methods":"cash",
         "ratings": 5,
@@ -76,7 +76,7 @@
         "image": "http://dummyimage.com/130x100.png/ff4444/ffffff"
       }, {
         "id": 9,
-        "name": "architecture",
+        "name": "Hotel Villa",
         "costForTwo": "35",
         "payment_methods":"cash",
         "ratings": 2,
@@ -85,7 +85,7 @@
         "image": "http://dummyimage.com/113x100.png/cc0000/ffffff"
       }, {
         "id": 10,
-        "name": "4th generation",
+        "name": "Maharaja Hotel",
         "costForTwo": "95",
         "payment_methods":"card",
         "ratings": 3,
@@ -109,7 +109,7 @@
         "ratings": 2,
         "votes": "5166",
         "reviews": "96262",
-        "image": "http://dummyimage.com/128x100.png/5fa2dd/ffffff"
+        "image": "https://cache.marriott.com/content/dam/marriott-renditions/HYDMC/hydmc-guestroom-9785-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px"
       }, {
         "id": 13,
         "name": "Configurable",
@@ -118,7 +118,7 @@
         "ratings": 2,
         "votes": "38",
         "reviews": "82587",
-        "image": "http://dummyimage.com/159x100.png/ff4444/ffffff"
+        "image": "https://static.toiimg.com/thumb/30282584/WelcomHotel-Bella-Vista.jpg?width=1200&height=900"
       }, {
         "id": 14,
         "name": "Persevering",
@@ -127,13 +127,13 @@
         "ratings": 4,
         "votes": "45660",
         "reviews": "3162",
-        "image": "http://dummyimage.com/112x100.png/cc0000/ffffff"
+        "image": "https://static.toiimg.com/thumb/30282584/WelcomHotel-Bella-Vista.jpg?width=1200&height=900"
       }, {
         "id": 15,
         "name": "budgetary management",
         "costForTwo": "509",
         "payment_methods":"cash",
-        "ratings": 53,
+        "ratings": 5,
         "votes": "65",
         "reviews": "4484",
         "image": "http://dummyimage.com/144x100.png/5fa2dd/ffffff"
